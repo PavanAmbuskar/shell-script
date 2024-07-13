@@ -1,5 +1,6 @@
 #!/bin/bash
-freespace= $(free -mt | grep "Total" | awk '{print$4}')
+set -x
+freespace=$(free -mt | grep "Total" | awk '{print$4}')
 TH=500
 if [[ $freespace -lt $TH ]]
 then
