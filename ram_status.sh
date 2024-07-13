@@ -1,7 +1,7 @@
 #!/bin/bash
-freespace=free -mt | grep "Total" | awk '{print$4}'
+freespace= $(free -mt | grep "Total" | awk '{print$4}')
 TH=500
-if[[ $freespace -lt $TH]]
+if [[ $freespace -lt $TH ]]
 then
 echo "ram is running out" 
 else
