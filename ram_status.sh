@@ -7,4 +7,4 @@ then
 echo "ram is running out -$freespace" 
 else
 echo "ram space is sufficient $freespace"
-fi
+fi 
